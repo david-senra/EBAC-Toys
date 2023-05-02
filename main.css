@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0 16px 0;
+    margin-bottom: 50px;
+    background-color: rgb(60, 134, 246);
+    color:#ffffff
+}
+
+header h1 {
+    width: 30%;
+    font-style: italic;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .container .menu {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu > li {
+    list-style: none;
+    padding-right: 15px;
+}
+
+.menu > li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sobre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    margin-bottom: 35px;
+}
+
+.sobre img {
+    max-width: 100%;
+    padding-right: 20px;
+}
+
+.texto {
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    color:blue;
+    border-bottom: 1px solid blue;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-bottom: 80px;
+}
+
+.produto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    max-width: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.produto p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.produto button {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color: rgb(13, 104, 135);
+    color: #ffffff;
+    width: 80%;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(60, 134, 246);
+    text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    header .container .menu {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .conteúdo {
+        display: block;
+        text-align: center;
+    }
+
+    .sobre img {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+    
+    .texto {
+        margin-bottom: 10px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .texto h2 {
+        text-align: left;
+    }
+    
+    header div.container {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .conteúdo {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+    }
+    
+    .sobre {
+        display: block;
+            text-align: center;
+    }
+
+    .texto h2 {
+        text-align: left;
+    }
+
+    .texto {
+        margin-bottom: 10px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .sobre img {
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+}

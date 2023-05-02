@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>EBAC Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                EBAC Toys
+            </h1>
+            <ul class="menu">
+                <li>
+                    <a href="#sobre">Sobre a Loja</a>
+                </li>
+                <li>
+                    <a href="#produtos">Produtos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <section class="sobre conteúdo" id="sobre">
+            <img src="./images/loja-brinquedos.jpg" alt="imagem de uma loja de brinquedos">
+            <div class="texto">
+                <h2>Sobre a loja</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum velit esse accusantium porro beatae neque quae nobis eius sed sequi quasi assumenda facilis quisquam, quos nostrum reiciendis dicta iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, assumenda. Quisquam consectetur magnam eaque? Vitae, doloremque fugit? Aliquam officiis nihil, officia amet error corporis aliquid sapiente natus, numquam laudantium reiciendis? </p>
+            </div>
+        </section>
+    </div>
+    <div class="container" id="produtos">
+        <h2>Produtos</h2>
+        <section class="produtos conteúdo">
+            <div class="produto">
+                <img src="./images/pelucia-vaca.png" alt="vaca de pelúcia">
+                <h3>Vaca de Pelúcia</h3>
+                <p>Vaca de pelúcia, tamanho médio, para crianças fazendeiras.</p>
+                <button type="button">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./images/elefante-pelucia.jpg" alt="elefante de pelúcia">
+                <h3>Elefante de Pelúcia</h3>
+                <p>Elefante de pelúcia, tamanho médio, para crianças do safari.</p>
+                <button type="button">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./images/cao-pelucia.jpg" alt="cão de pelúcia">
+                <h3>Cão de Pelúcia</h3>
+                <p>Cão de pelúcia, tamanho médio, para crianças do lar.</p>
+                <button type="button">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./images/dinossauro-pelucia.jpg" alt="dinossauro de pelúcia">
+                <h3>Dinossauro de Pelúcia</h3>
+                <p>Dinossauro de pelúcia, tamanho médio, para paleontólogos.</p>
+                <button type="button">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy 2023 EBAC Toys - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
